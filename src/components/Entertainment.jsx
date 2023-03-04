@@ -2,7 +2,7 @@ import axios from "axios";
 import React,{useEffect, useState} from "react"; 
 
 import ClipLoader from "react-spinners/ClipLoader";
-// process.env.API_KEY
+process.env.API_KEY
 
 export const Entertainment = () => { 
     const [news, setNew] = useState([]);
@@ -12,7 +12,7 @@ export const Entertainment = () => {
     let getNews=async()=>{
 
         try {
-            const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=7d2209163e5a4832a121a9e1a561a9dd`)
+            const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=${API_KEY}`)
  
             setNew(res.data.articles);
     

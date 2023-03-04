@@ -59,7 +59,7 @@ ul li{
 /* navbar mobile css */
 @media(min-width: 1300px){
   .hamburger-menu{
-    display: none;
+    display: none; 
   }
   
 }
@@ -120,14 +120,14 @@ ul li a:hover{
   display: none;
 }
 
-.hamburger-menu{ 
+.hamburger-menu{  
   float: right;
   width: 20%;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 8px;
-  padding: 0;  
+  margin: 8px ;
+  padding: 2px;  
 } 
  
 }
@@ -137,9 +137,7 @@ ul li a:hover{
 
 .home{
   height: 100vh;
-  width: 100%; 
-  /* display: grid; 
-  grid: auto-flow / 1fr 1fr 1fr;   */
+  width: 100%;  
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -215,11 +213,12 @@ ul li a:hover{
   }
   .mobile-menu-link{
     margin-top: 46px;
+    
     background-color: black;
-    height: 500px;
+    height: 450px;
     width: 100%;
     margin-right: -100px;
-  list-style-type: none;
+    list-style-type: none;
   }
   .navLink:hover{ 
     color: #fff;

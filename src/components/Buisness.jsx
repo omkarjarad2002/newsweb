@@ -1,7 +1,8 @@
 import axios from "axios";
 import React,{useEffect, useState} from "react";  
 import { json } from "react-router-dom";
-import ClipLoader from "react-spinners/ClipLoader"; 
+import ClipLoader from "react-spinners/ClipLoader";
+process.env.API_KEY 
 
 export const Business = () => {  
     const [news, setNew] = useState([]);
@@ -11,7 +12,7 @@ export const Business = () => {
     let getNews=async()=>{
 
         try {
-            const res = await axios.get(`https://newsapi.org/v2/top-headlines/sources?category=business&apiKey=7d2209163e5a4832a121a9e1a561a9dd`)
+            const res = await axios.get(`https://newsapi.org/v2/top-headlines/sources?category=business&apiKey=${API_KEY}`)
  
             setNew(res.data.sources);
     
